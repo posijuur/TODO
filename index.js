@@ -9,7 +9,7 @@ function Model(data) {
 		var number = +item - 1;
 		var text = self.data[number];
 		var arr = [];
-		
+
 		if (item > lengthArr) {
 			return self.data;
 		} else {
@@ -30,10 +30,15 @@ function Model(data) {
 				newArr.push(el);
 			};
 		});
-		self.data = [];
-		self.data = newArr;
-		console.log(self.data);
-		return self.data;
+		if (newArr.length < 1) {
+			alert('Not found');
+			return self.data;
+		} else {
+			self.data = [];
+			self.data = newArr;
+			console.log(self.data);
+			return self.data;
+		}
 	};
 
 	self.addItem = function (item) {
