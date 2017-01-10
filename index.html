@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>TODO</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link href="hover.css" rel="stylesheet" media="all">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css"></head>
+<body>
+	<script type="text/tmpl" id='wrapper-template'>
+		<div class="wrap">
+			<div class="wrap-sort">
+				<input type="text" class="form-control sort-left">
+				<input type="text" class="form-control sort-right">
+				<button class="btn-sort hvr-float-shadow js-sort">Sort</button>
+			</div>
+			<ul class="item-list">
+				
+			</ul>
+			<div class="controlls">
+				<input type="text" class="item-value">
+				<button class="item-add hvr-float-shadow">Add</button>
+			</div>
+		</div>		
+	</script> 
+
+		<script type="text/tmpl" id='list-template'>
+			<% for (var i = 0; i < data.length; i++) { %>
+				<li class="item-list_item">
+					<span class="number"><%= i+1 %></span>
+					<span class="text"><%- data[i] %></span>
+					<input class="input-t" data-value="<%- data[i] %>" type="text" name="" value="<%- data[i] %>"> 
+					<span data-value="<%- data[i] %>" class="item-delete"><i class="fa fa-times fa-spin" aria-hidden="true"></i></span>
+					<!-- <span class="item-check"><i class="fa fa-check" aria-hidden="true"></i></span>  -->
+					<span class="item-edit hvr-icon-wobble-vertical"></span> 
+					
+				</li>
+			<% }; %>
+		</script>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/lodash/4.15.0/lodash.min.js"></script>
+	<!-- <script data-main="js/app.js" src="js/require.js"></script> -->
+	<script src="index.js"></script>
+</body>
+</html>

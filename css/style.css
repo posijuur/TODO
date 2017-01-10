@@ -1,0 +1,84 @@
+.wrap {
+	margin: 20px auto;
+	width: 30%;
+	text-align: center;
+	
+}
+
+.item-list_item {
+	display: block;
+	padding: 3px;
+	border-radius: 5px; 	
+	/* float: left; */
+	clear: both;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #ADC5D6; 
+	background-color: #C7E7F0;
+	overflow: hidden;
+}
+
+.input-t {
+	display: none;
+	margin: 0 auto;
+	border: none;
+	border-radius: 5px;
+	background-color: #F7DAF2;
+}
+
+.item-check {
+	float: right;
+	display: none;
+	cursor: pointer;
+}
+
+.item-edit {
+	float: right;
+	color: #EA7FDC;
+	cursor: pointer;
+}
+
+.item-delete {
+	float: right;
+	color: red;
+	cursor: pointer;
+}
+
+.item-add {
+	padding: 5px;
+	border: 1px solid #A28E8E;
+	border-radius: 5px; 	
+	cursor: pointer;
+}
+
+.controlls {
+	clear: both;
+}
+
+.item-value {
+	border: 3px solid #A2AD96;
+	border-radius: 5px; 
+}
+
+.number {
+	float: left
+}
+
+.wrap-sort {
+	margin-bottom: 20px;
+}
+
+.form-control {
+	height: 20px;
+}
+
+.sort-left {
+	width: 10%;
+	margin-right: 50px;
+}
+
+.btn-sort {
+	padding: 5px;
+	border: 1px solid #A28E8E;
+	border-radius: 5px; 	
+	cursor: pointer;
+}
